@@ -1,0 +1,12 @@
+<h3>Listado de Pokemon</h3>
+<div *ngIf="deletedPokemon;else nothingTransfered">
+  <h3>Pokemon transferido!<small class="text-danger">El pokemon trasnferido fue {{deletedPokemon}} </small></h3>
+</div>
+<ng-template #nothingTransfered>
+  <h3 >No ha borrado nada</h3>
+</ng-template>
+<button  *ngIf="pokemonName.length > 0 " (click)="trasnferirPokemon()" class="btn btn-outline-danger">Transferir último pokemon</button>
+
+<ul class="mt-2 list-group">
+  <li *ngFor="let name of pokemonName" class="list-group-item">{{name}}</li>
+</ul>
