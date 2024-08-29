@@ -1,0 +1,10 @@
+<h1>Pokedex personajes</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <pokedex-listado [characterList]="characters" (onCharacterIndex)="onDeleteCharacter($event)"></pokedex-listado>
+  </div>
+  <div class="col">
+    <pokedex-add-character (onNewCharacter)="onNewCharacter($event)"></pokedex-add-character>
+  </div>
+</div>

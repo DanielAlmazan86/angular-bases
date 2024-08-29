@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { CounterModule } from './counter/counter.module';
 import { HeroesModule } from './heroes/heroes.module';
+import { PokedexModule } from './pokedex/pokedex.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HeroesModule } from './heroes/heroes.module';
     BrowserModule,
     AppRoutingModule,
     CounterModule,
-    HeroesModule
+    HeroesModule,
+    PokedexModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
